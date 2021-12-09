@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+<div class="wrapper">
+
+    <logo class = "box logo">
+      <img src="images/Kojima.png" alt="Logo image" class="banner" >
+    </logo>
+
+    <header class = "box header">
+      <h1>Tip Calculator</h1>
+    </header>
+
+    <nav class = "box nav">
+    <ul>
+      <li><a href="index.html">Home</a> </li>
+      <li><a href="page2.html">Form</a> </li>
+      <li><a href="page3.html">Tip Calculator</a> </li>
+      <li><a href=https://www.youtube.com/watch?v=EPmFKU38b7Y>Grading</a> </li>
+    </ul>
+    </nav>
+
+    <main class = "box main">
+      <form action="javascript: calctip()" onreset="resetMyForm()">
+      <label for="quantity">Food Total:</label><br>
+      <input type="number" step=0.01 id="quantity" name="quantity" min="0">
+      
+      <br>
+      <br>
+
+      <label for="percent">Tip Percentage:</label><br>
+      <input type="range" id="percent" name="percent" min="10" max="50" value="20">
+      <p>Percentage: <span id="amount"></span>%</p>
+
+      <br>
+
+      <input type="submit" value="Calculate">
+
+      <br>
+      <br>
+
+      <p>Tip Amount Due: <span id="tip"></span></p>
+
+      <br>
+      <input type="reset">
+      </form>
+      
+    </main>
+
+    <footer class = "box footer">
+       <p>Michael Farmer <a href = "mailto: farmer_michael1@columbusstate.edu">farmer_michael1@columbusstate.edu</a>&copy;</p>
+    </footer>
+
+</div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>

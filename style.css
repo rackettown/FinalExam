@@ -1,0 +1,98 @@
+body{
+  margin: 0px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, [col] 25% ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: rgb(158, 158, 158);
+    color: rgb(107, 93, 119);
+    width: 100%;
+  }
+
+  .box {
+    background-color: rgb(78, 71, 94);
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    border-collapse: collapse;
+  }
+
+  logo {
+    grid-column: col / span 2;
+    grid-row: row ;
+    
+  }
+
+
+  header {
+    grid-column: col 3 / span 2 ;
+    grid-row: row ;
+    font-family: impact;
+  }
+
+
+  nav {
+    grid-column: col ;
+    grid-row: row 2 ;
+  }
+
+  nav a:link{
+    text-decoration: none;
+  }
+
+  nav ul{
+  list-style-type:none;
+ }
+
+
+  main {
+    grid-column: col 2 / span 3 ;
+    grid-row: row 2 ;
+    font-family: sans-serif;
+  }
+
+
+  footer {
+    grid-column: col / span 4;
+    grid-row: row 3;
+    width: 100%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
+
+
+
+.banner{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 45%;
+    height: auto;
+}
+
+
+
+
+
+ /* unvisited link */
+a:link {
+  color: rgb(253, 239, 160);
+}
+
+/* visited link */
+a:visited {
+  color: rgb(71, 214, 219);
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+  background-color: rgb(51, 94, 58);
+}
+
+/* selected link */
+a:active {
+  color: blue;
+} 
